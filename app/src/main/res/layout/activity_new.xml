@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pe.hypergis.peopledb.NewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su nombre"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/txtDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su DNI"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/txtEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su edad"
+            android:textAlignment="viewEnd"
+            android:inputType="number"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/txtBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su biografia"
+            android:gravity="top|left"
+            android:lines="4"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/txtImagenurl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la url de su foto"
+            android:inputType="textUri"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:drawableLeft="@drawable/icon_save"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+</RelativeLayout>
