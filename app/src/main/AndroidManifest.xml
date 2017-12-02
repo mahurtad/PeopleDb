@@ -22,12 +22,14 @@
             android:name=".BioActivity"
             android:label="@string/title_activity_bio"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pe.hypergis.peopledb.MainActivity" />
         </activity>
-        <activity android:name=".NewActivity" />
+        <activity android:name=".NewActivity"
+            android:label="Add person"/>
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -38,7 +40,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignupActivity" />
-        <activity android:name=".ResetPasswordActivity"></activity>
+        <activity android:name=".ResetPasswordActivity"
+           android:label="Reset password" ></activity>
     </application>
 
 </manifest>
